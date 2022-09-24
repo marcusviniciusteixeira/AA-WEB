@@ -1,0 +1,739 @@
+:root {
+    --bg-color: #fec955;
+    --text-color: #462009;
+    --color-text-padrao: #FFF;
+    --bg-white: #FFF;
+    --font-banner: Heading-Pro-Wide-Blactrial;
+    --shadow-text: #f7ecbe;
+    --color-text-menu-cardapio: #746a68;
+    --btn-bg-color: #de1c1c;
+    --border-input: #dbdbdb;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* FONTS */
+@font-face {
+    font-family: Heading-Pro-Wide-Blactrial;
+    src: url('../fonts/Heading-Pro-Wide-Blactrial.otf');
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+     width: 100vw;
+    overflow-x: hidden;
+}
+
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background-color: #fec955;
+}
+header .container {
+    width: 80%;
+    background-color: var(--bg-color);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+header nav .nav-menu .nav-menu-tell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+header nav .nav-menu .nav-menu-tell img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+header nav .nav-menu .nav-menu-tell p {
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+header nav .nav-menu-bar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+header nav .nav-menu-bar ul li {
+    margin-left: 2.1875rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+header nav .nav-menu-bar ul li:first-child {
+    margin-left: 0;
+}
+
+.Menu-Mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+.Menu-Mobile .mm_line {
+    height: 4px;
+    background-color: var(--text-color);
+}
+
+
+
+
+
+
+/* MAIN BANNER*/
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--bg-color);
+}
+main .container {
+    width: 80%;
+    background-color: red;
+}
+main .banner {
+    height: calc(100vh - 100px);
+    background-color: var(--bg-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+main .banner .banner-title h3 {
+    font-size: 0.93rem;
+    font-weight: 500;
+    border: 3px dashed var(--text-color);
+    padding: 0.5rem 0.75rem;
+    color: var(--text-color);
+    display: inline-block;
+}
+main .banner .banner-title h1 {
+    color: var(--text-color);
+    font-size: 5.40rem;
+    font-family: var(--font-banner) ;
+    text-shadow: 4px 4px 0px var(--shadow-text);
+}
+
+main .banner .banner-logo {
+    height: 85%;
+    display: inline-flex;
+    align-items: center;
+}
+main .banner .banner-logo img {
+    height: 65%;
+    width: 100%;
+}
+
+/* SECTION 1*/
+section.cards {
+    padding:3.125rem;
+    color: var(--color-text-padrao);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+ 
+}
+section.cards .card {
+    min-height: 18.75rem;
+    width: 40%;
+    cursor: pointer;
+}
+section.cards  article.card-one {
+    border-radius: 10px;
+    background-image: url('../images/front-view-burger-fries-plate.jpg');
+    background-position: center;
+    background-size: cover;
+    text-transform: uppercase;
+    padding: 0.9375rem 0.9375rem 0rem 0.9375rem;
+    margin-right: 1.875rem;
+}
+section.cards article.card-one h2 {
+    font-weight: 500;
+    font-size: 1.0625rem;
+}
+section.cards  article.card-one h1 {
+    font-size: 1.5625rem;
+    font-weight: 600;
+}
+section.cards  article.card .two-cards {
+    padding: 0.9375rem 0.9375rem 0rem 0.9375rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-image: url('../images/lidye-1Shk_PkNkNw-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 47%;
+}
+section.cards  article.card .two-cards h2 {
+    font-weight: 500;
+    font-size: 1.0625rem;
+}
+section.cards  article.card .two-cards h1 {
+    font-size: 1.5625rem;
+    font-weight: 600;
+}
+
+section.cards  article.card .two-cards.two-cards-1 {
+    background-image: url('../images/top-view-beef-burger-ready-be-served.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1.25rem;
+}
+/* SECTION 2*/
+section.section-menu {
+    margin-bottom: 6.125rem;
+}
+section.section-menu article.title-menu-cardapio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2.8125rem;
+    flex-wrap: wrap;
+}
+section.section-menu article.title-menu-cardapio button {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 0;
+    padding: 0.625rem;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    margin-bottom: 1.5625rem;
+    border: 1px solid transparent;
+}
+section.section-menu article.title-menu-cardapio button:hover {
+    transform: scale(1.02);
+}
+section.section-menu article.title-menu-cardapio h1 {
+    color: var(--text-color);
+    font-size: 2.3rem;
+    font-family: var(--font-banner);
+}
+section.section-menu article.title-menu-cardapio p {
+    color: var(--color-text-menu-cardapio);
+    max-width: 66.25rem;
+}
+
+section.section-menu article.menu-cardapio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+section.section-menu article.menu-cardapio article.menu-cardapios-areas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+section.section-menu article.menu-cardapio article.menu-cardapios-areas img {
+    box-shadow: 0px 0px 0px #676767;
+}
+section.section-menu article.menu-cardapio article.menu-cardapios-areas h1 {
+    margin-top: 1.5625rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+section.section-menu article.menu-cardapio article.menu-cardapios-areas p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-menu-cardapio);
+    max-width: 25rem;
+} 
+
+section.section-menu article.menu-cardapio article.menu-cardapios-areas button {
+    padding: 0.625rem 1.5rem;
+    text-transform: uppercase;
+    background: var(--btn-bg-color);
+    border: 1px solid transparent;
+    color: var(--color-text-padrao);
+    font-weight: 800;
+}
+section.section-menu article.menu-cardapio article.menu-cardapios-areas button:hover {
+    transform: scale(1.02);
+}
+
+/* SECTION 3 */
+
+section.discover-events {
+    padding: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.discover-events .discover-area {
+    background-color: var(--bg-white);
+    display: flex;
+    width: 100%;
+    padding: 0.9375rem 0.9375rem 0.9375rem 2rem;
+    flex-wrap: wrap;
+    box-shadow: 0px 10px 25px #676767;
+}
+section.discover-events .discover-area article.information-discover {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+section.discover-events .discover-area article.information-discover:first-child{
+    margin-right: 1.875rem;
+    margin-bottom: 1.875rem ;
+}
+section.discover-events .discover-area article.information-discover h2 {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+section.discover-events .discover-area article.information-discover h1 {
+    color: var(--text-color);
+    font-family: var(--font-banner);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.9375rem;
+}
+section.discover-events .discover-area article.information-discover p {
+ max-width: 500px;
+}
+section.discover-events .discover-area article.information-discover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+section.discover-events .discover-area article.information-discover .discover-points {
+    display: flex;
+}
+section.discover-events .discover-area article.information-discover .discover-points .discover-point{
+    width: 15px; 
+    height: 15px;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+section.discover-events .discover-area article.information-discover .discover-points .discover-point:first-child{
+    background-color: var(--bg-color);
+}
+
+
+/* SECTION 3 */
+section.reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6.25rem;
+}
+section.reservation article.reservation-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 3.4375rem 0rem;
+}
+section.reservation article.reservation-title h2 {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+section.reservation article.reservation-title h1 {
+    color: var(--text-color);
+    font-family: var(--font-banner);
+    font-size: 2.5rem;
+}
+section.reservation form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+section.reservation form label.forms-dados {
+    margin-bottom: 1.125rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.reservation form label.forms-dados input {
+    padding: 0.9375rem;
+    border-radius: 0.3125rem;
+    border: 0;
+    margin-right: 1.125rem;
+    width: 25%;
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid var(--border-input);
+}
+section.reservation form label.forms-dados input.sem-margin-right {
+    margin-right: 0;
+}
+
+section.reservation form label.forms-dados input[type=button] {
+    background-color: var(--btn-bg-color);
+    color: var(--color-text-padrao);
+    font-weight: 800;
+    border: 0;
+    cursor: pointer;
+}
+section.reservation form label.forms-dados input::placeholder {
+    color: var(--color-text-menu-cardapio);
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--bg-white);
+}
+footer .container {
+    width: 100%;
+    margin: 0px 2.1875rem 2.5rem 2.1875rem;
+}
+
+footer div.footer-img-bg {
+    background-image: url('../images/top-view-beef-burger-ready-be-served.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+footer div.footer-img-bg .footer-black {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    padding: 3.125rem 1.25rem 1.25rem 1.6875rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--color-text-padrao);
+}
+
+footer div.footer-img-bg .footer-black article.footer-information {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer div.footer-img-bg .footer-black article.flex {
+    justify-content: center;
+}
+footer div.footer-img-bg .footer-black article.footer-information section.title-information-img {
+    font-weight: 400;
+}
+footer div.footer-img-bg .footer-black article.footer-information section.title-information-img img {
+    margin-bottom: 2rem;
+}
+footer div.footer-img-bg .footer-black article.footer-information .diretios-autorais {
+    text-transform: uppercase;
+}
+footer div.footer-img-bg .footer-black article.footer-information section.footer-information--localizacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    align-items: flex-end;
+}
+
+ footer div.footer-information--localizacao--info {
+    display: flex;
+    flex-direction: column;
+}
+
+ footer div.footer-information--localizacao--info-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+footer div.footer-information--localizacao--info-1 img {
+    margin-right: 1.25rem;
+}
+footer div.footer-information--localizacao {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+footer div.footer-information--localizacao .bg-white--img {
+    background-color: var(--bg-white);
+    padding: 0.3125rem;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.margin-auto {
+    width: 80%;
+    margin: 0px auto;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width:1348px) {
+    main .banner {
+        padding: 50px;
+        justify-content: center;
+    }
+    main .banner-title {
+        text-align: center;
+    }
+    section.discover-events {
+        width: 95%;
+    }
+    section.discover-events  .title--information-discover {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    html {
+        font-size: 15px;
+    }
+    header .container {
+        width: 90%;
+    }
+    .margin-auto {
+        width: 90%;
+    }
+
+    section.section-menu article.title-menu-cardapio h1 {
+        margin-bottom: 1rem;
+    }
+    section.section-menu article.menu-cardapio {
+        flex-direction: column;
+    }
+    section.section-menu article.menu-cardapio img {
+        width: 100%;
+    }
+    section.discover-events {
+        width: 90%;
+    }
+    section.discover-events .discover-area{
+        padding: 1.875rem;
+    }
+    section.discover-events .discover-area article.information-discover:first-child {
+        margin-right: 0;
+        width: 100%;
+    }
+    .nav-menu {
+        display: flex;
+        align-items: center;
+    }
+    header nav .nav-menu .nav-menu-tell {
+        margin-bottom: 0;
+        margin-right: 1.875rem;
+    }
+  
+    
+     
+}
+
+@media (max-width:1075px) {
+
+    .nav-menu-bar {
+        display: none;
+    }
+    section.discover-events .discover-area{
+        padding: 1.875rem;
+        flex-direction: column;
+    }
+    section.discover-events .discover-area article.information-discover:first-child {
+        margin-right: 0;
+        width: 100%;
+    }
+    section.section-menu article.menu-cardapio {
+        flex-direction: column;
+    }
+    .nav-menu-bar {
+        position: absolute;
+        right: 0;
+        top: 100px;
+        background: #FFFFFF;
+        width: 70vw;
+        height: calc(100vh - 100px);
+    }
+    header nav .nav-menu-bar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav .nav-menu-bar ul li {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 27px;
+        height: 80px;
+        width: 100%;
+        border-bottom: 3px solid var(--text-color);
+        padding: 1.25rem;
+    }
+    header nav .nav-menu-bar ul li:first-child {
+        margin-left: 2.1875rem;
+    }
+
+    header nav .nav-menu-bar ul li:hover {
+        background-color: var(--text-color);
+        color: var(--color-text-padrao);
+        border-bottom: 5px solid var(--color-text-padrao);
+    }
+    .Menu-Mobile {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+        
+    
+}
+
+@media (min-width:450px) and (max-width:768px) {
+    header nav .nav-menu .nav-menu-tell {
+        display: none;
+    }
+    main .banner .banner-title h1 {
+        font-size: 4.2rem;
+    }
+    section.cards {
+        flex-direction: column;
+    }
+    section.cards article.card-one {
+        margin-bottom: 1.25rem;
+        width: 100%;
+    }
+    section.cards .card {
+        width: 100%;
+        height: 9.375rem;
+    }
+    section.reservation form label.forms-dados {
+        flex-direction: column;
+    }
+    section.reservation form label.forms-dados input {
+        margin-right: 0;
+        width: 60%;
+        margin-bottom: 1.125rem;
+    }
+    section.reservation form label.forms-dados input.sem-margin-right {
+        margin-bottom: 0;
+    }
+    footer div.footer-img-bg .footer-black article.footer-information section.footer-information--localizacao {
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    footer div.footer-img-bg .footer-black {
+        flex-direction: column;
+    }
+    footer div.footer-information--localizacao--info-1 p{
+        font-size: 1rem;
+    }
+    footer div.footer-img-bg .footer-black article.footer-information section.title-information-img {
+        margin-bottom: 15px;
+    }
+    footer div.footer-img-bg .footer-black {
+        padding: 1.125rem 1.25rem 0.25rem 1.6875rem;
+    }
+    footer div.footer-img-bg .footer-black article.footer-information {
+        margin-bottom: -2px;
+    }
+}
+
+@media (max-width:450px) {
+    header nav .nav-menu .nav-menu-tell {
+        display: none;
+    }
+    main .banner .banner-title h1 {
+        font-size: 3.4rem;
+    }
+    main .banner .banner-title h3 {
+        margin-bottom: 0.625rem;
+    }
+    main .banner .banner-logo img {
+        height: 55%;
+    }
+    section.cards {
+        padding: 1rem;
+        flex-direction: column;
+        margin-bottom: 1.25rem;
+    }
+    section.cards article.card-one {
+        margin-bottom: 1.25rem;
+        width: 100%;
+    }
+    section.cards .card {
+        width: 100%;
+        height: 9.375rem;
+    }
+    section.discover-events .discover-area article.information-discover h2 {
+        font-size: 1.2rem;
+    }
+    section.discover-events .discover-area article.information-discover h1 {
+        font-size: 1.5rem;
+    }
+    section.reservation form label.forms-dados {
+        flex-direction: column;
+    }
+    section.reservation form label.forms-dados input {
+        margin-right: 0;
+        width: 75%;
+        margin-bottom: 1.125rem;
+    }
+    section.reservation form label.forms-dados input.sem-margin-right {
+        margin-bottom: 0;
+    }
+    section.discover-events .discover-area {
+        padding: 1.2rem;
+    }
+    section.discover-events .discover-area article.information-discover h1 {
+        font-size: 1.375rem;
+    }
+    footer div.footer-img-bg .footer-black {
+        padding: 1.125rem 1.25rem 0.25rem 1.6875rem;
+    }
+    footer .container {
+        margin: 0;
+    }
+    footer div.footer-img-bg .footer-black article.footer-information {
+        font-size: 0.875rem;
+    }
+    footer div.footer-information--localizacao--info {
+        font-size: 0.875rem;
+    }
+    footer div.footer-img-bg .footer-black article.footer-information section.footer-information--localizacao {
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+}
+    
+
+
+
